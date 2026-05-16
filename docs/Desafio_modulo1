@@ -1,0 +1,16 @@
+'''
+Desafio Extra: Deixe sua mensagem ainda mais legal! 
+Use a biblioteca datetime para exibir a hora atual 
+junto com a saudação.
+
+'''
+
+from datetime import datetime
+
+nome = input("Qual é o seu nome? ")
+
+hora_atual = datetime.now()
+
+hora_formatada = hora_atual.strftime("%H:%M")
+
+print(f"Oi, {nome}! A hora atual é {hora_formatada}.")
